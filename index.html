@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+    <title>Radio</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Радиостанции</h1>
+      <div class="labels">
+        <label for="genre">Выберите жанр:</label>
+        <input
+          id="genres"
+          type="text"
+          name="input"
+          list="genre_list"
+          placeholder="rock"
+          autocomplete="on"
+        />
+        <datalist id="genre_list"></datalist>
+        <label for="country">Выберите страну:</label>
+        <input
+          id="countrys"
+          type="text"
+          name="input"
+          list="country_list"
+          placeholder="Russia"
+          autocomplete="on"
+        />
+        <datalist id="country_list"></datalist>
+      </div>
+      <button class="btn" type="button">Выполнить запрос</button>
+    </div>
+  </body>
+</html>
